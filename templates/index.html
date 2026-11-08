@@ -1,0 +1,15 @@
+{% extends "base.html" %} 
+
+{% block content %}
+
+<p>
+  I'm a Bachelor's student in Information Technology and Electrical Engineering at ETH Zürich.
+  I'm interested in computer architecture, the intersection of hardware and software, and artificial intelligence (among other things).
+</p>
+
+<p>
+  <a href="{{ get_url(path='@/projects/_index.md')}}">CV</a>
+  <a href="{{ get_url(path='@/projects/_index.md')}}">Projects</a>
+  <a href="{{ get_url(path='@/essays/_index.md')}}">Essays</a>
+</p>
+{% endblock content %}
