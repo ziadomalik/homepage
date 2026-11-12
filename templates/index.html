@@ -2,14 +2,30 @@
 
 {% block content %}
 
-<p>
-  I'm a Bachelor's student in Information Technology and Electrical Engineering at ETH Zürich.
-  I'm currently interested in computer architecture, the intersection of hardware and software, and artificial intelligence.
-</p>
+<main class="home-section">
+  <img 
+    src="{{ get_url(path='images/me.jpg') }}" 
+    alt="Me trying to look like a cool surfer dude." 
+  />
+  
+  <div>
+    <p>
+      I’m a bachelor’s student in Electrical Engineering and Information Technology at ETH Zürich, 
+      interested in computer architecture, compilers, and machine learning.
+    </p>
 
-<p>
-  <a href="{{ get_url(path='@/projects/_index.md')}}" target="_blank">CV</a>
-  <a href="{{ get_url(path='@/projects/_index.md')}}">Projects</a>
-  <a href="{{ get_url(path='@/essays/_index.md')}}">Essays</a>
-</p>
+    <p>
+      I work as a research assistant for the 
+      <a target="_blank" href="https://ast.ethz.ch">Advanced Software Technologies Lab</a>, 
+      where I help develop Belvue, a self-hosting visual programming language.
+    </p>
+
+    <p class="links"> 
+      <a href="{{ get_url(path='@/projects/_index.md')}}" target="_blank">CV</a>
+      <a href="{{ get_url(path='@/projects/_index.md')}}">Projects</a>
+      <a href="{{ get_url(path='@/essays/_index.md')}}">Essays</a>
+    </p>
+  </div>
+</main>
+
 {% endblock content %}
