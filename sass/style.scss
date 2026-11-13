@@ -63,3 +63,42 @@ a[target="_blank"]::after {
     flex-direction: column;
   }
 }
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+// --- Blog ---
+
+.post-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-list-item {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  height: 120px;
+}
+
+.pli-link {
+  margin: 0;
+  text-decoration: none;
+}
+
+.pli-link:hover {
+  text-decoration: underline;
+}
+
+.pli-title {
+  margin: 0;
+}
+
+.pli-image {
+  width: 288px;
+  //  height: 162px;
+  object-fit: cover;
+}
